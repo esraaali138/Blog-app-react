@@ -34,7 +34,7 @@ export default function AddBlog() {
 
   return (
     <div className="Container">
-<Container className="container mt-5 w-50">
+<Container className="container mt-5 ">
      <Form>
      <h2 className="text-center">Add blog</h2>
 
