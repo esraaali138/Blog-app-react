@@ -17,7 +17,7 @@ function HeroSec() {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="/assets/pexels-photo-585753.webp"
+          src="/assets/360_F_678638053_b75gqUTCFqhGGJn3tIQNyKPqmeReLViq.png"
           alt="Second slide"
         />
         <Carousel.Caption>
