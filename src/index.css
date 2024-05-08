@@ -1,0 +1,72 @@
+.nav-link:hover{
+  color: green !important;
+}
+
+.Container {
+  background: #578b3b;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+Form,form {
+  max-width: 550px;
+  background-color: white;
+  margin: auto;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.ButtonPrimary {
+    border-radius: 20px !important;
+    background: transparent !important;
+    color: green !important;
+    border: 2px solid green !important;
+    padding: 8px 20px !important;
+    cursor: pointer ;
+}
+.ButtonPrimary:hover {
+    background: green !important;
+    color: #fff !important;
+}
+
+
+.dropdown-item:hover{
+  background: green !important;
+  color: #fff !important;
+}
+/* blogs */
+.cards {
+    margin: 20px 10px;
+
+    overflow: hidden; 
+    transition: transform 0.3s ease-in-out; 
+  }
+  
+  .cards:hover {
+    display: block;
+    transform: scale(1.1); 
+    cursor: pointer;
+  }
+  
+/* update blog */
+.cancle {
+  background: green !important;
+  color: #fff !important;
+}
+
+.buttonPagenation{
+  background: green !important;
+  color: #fff !important;
+}
+/* media quere */
+@media only screen and (max-width:576px) {
+  
+  .logo{
+    margin-left: 1.5rem !important;
+  }
+  .auth{
+    margin-left: 1.5rem !important;
+  }
+}
