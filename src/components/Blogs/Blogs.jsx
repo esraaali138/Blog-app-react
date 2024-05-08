@@ -23,7 +23,7 @@ export default function Blogs({ authenticated }) {
 
   useEffect(() => {
     async function fetchData() {
-      const { data } = await axios.get("http://localhost:2299/api/blogs");
+      const { data } = await axios.get("https://blog-nodejs-5.onrender.com/api/blogs");
       setBlogData(data);
     }
 
@@ -31,7 +31,7 @@ export default function Blogs({ authenticated }) {
   }, []);
 
   const handleDelete = async (id) => {
-    await axios.delete(`http://localhost:2299/api/blog/${id}`);
+    await axios.delete(`https://blog-nodejs-5.onrender.com/api/blog/${id}`);
     const filteredBlog = blogData.filter((b) => b._id !== id);
     setBlogData(filteredBlog);
   };

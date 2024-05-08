@@ -24,12 +24,15 @@ export default function SignUp() {
     setValidated(true);
 
     try {
-      const { data } = await axios.post("http://localhost:2299/api/register", {
-        firstName: form.firstName,
-        lastName: form.lastName,
-        email: form.email,
-        password: form.password,
-      });
+      const { data } = await axios.post(
+        "https://blog-nodejs-5.onrender.com/api/register",
+        {
+          firstName: form.firstName,
+          lastName: form.lastName,
+          email: form.email,
+          password: form.password,
+        }
+      );
       console.log(data);
       navigate("/login", { replace: true });
     } catch (error) {

@@ -15,7 +15,7 @@ export default function UpdateBlog({}) {
   const navigate = useNavigate();
   useEffect(() => {
     async function fetchBlogId() {
-      const { data } = await axios.get(`http://localhost:2299/api/blog/${id}`);
+      const { data } = await axios.get(`https://blog-nodejs-5.onrender.com/api/blog/${id}`);
       setBlogUpdated(data);
     }
     fetchBlogId();
@@ -23,7 +23,7 @@ export default function UpdateBlog({}) {
   const handleUpdate = async (event) => {
     event.preventDefault();
     const { data } = await axios.patch(
-      `http://localhost:2299/api/blog/update/${id}`,
+      `https://blog-nodejs-5.onrender.com/api/blog/update/${id}`,
       blogUpdated
     );
     console.log(data);

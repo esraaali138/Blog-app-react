@@ -20,7 +20,7 @@ export default function Login({ setAuthenticated }) {
     }
     setValidated(true);
     try {
-      const { data } = await axios.post("http://localhost:2299/api/login", {
+      const { data } = await axios.post("https://blog-nodejs-5.onrender.com/api/login", {
         email: formData.email,
         password: formData.password,
       });

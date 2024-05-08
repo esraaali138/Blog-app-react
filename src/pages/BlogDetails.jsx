@@ -8,7 +8,7 @@ export default function BlogDetails() {
   const [blog, setBlog] = useState([]);
   useEffect(() => {
     async function fetchBlogId() {
-      const { data } = await axios.get(`http://localhost:2299/api/blog/${id}`);
+      const { data } = await axios.get(`https://blog-nodejs-5.onrender.com/api/blog/${id}`);
       setBlog(data);
       setLoading(true);
     }
